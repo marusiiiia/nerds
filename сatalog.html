@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,22 +12,38 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <a href="index.html"
+        ><img src="img/nerds-logo.png" alt="лого" width="160" height="67"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href=""></a>Студия</li>
+          <li><a href=""></a>Клиенты</li>
+          <li><a href=""></a>Магазин</li>
+          <li><a href=""></a>Контакты</li>
+        </ul>
+        <a href="#"
+          ><img src="img/cart-icon.svg" width="15" height="15" /><span
+            >Корзина</span
+          ></a
+        >
+      </nav>
+    </header>
     <main>
-      <h1>Магазин готовых шаблонов</h1>
-
-      <div class="square">
-        <div class="ribbon">new</div>
-      </div>
-
+      <h1>Магазин готовых шаблонов</h1>      
       <section>
         <h2 class="visually-hidden">Фильтр по каталогу</h2>
         <form action="#">
           <fieldset>
             <legend>Стоимость:</legend>
-            <img src="" alt="Слайдер" />
+            <img src="Img/price-slider.png" alt="Слайдер" width="162" height="22"/>
             <p>От <input type="text" /> До <input type="text" /></p>
           </fieldset>
           <fieldset>
@@ -103,35 +119,97 @@
         <ul>
           <li>
             <article>
-              <h4 class="visually-hidden">Шаблон сайта Седоны</h4>
               <div class="template-card-buttons">
                 <button type="button">one</button>
                 <button type="button">two</button>
                 <button type="button">three</button>
               </div>
-              <a href="#"><img src="" alt="Принт шаблона" /></a>
+              <h2>Sedona</h2>
+              <a href="#"
+                ><img
+                  src="img/img-sedona.png"
+                  alt="Шаблон Sedona"
+                  width="360"
+                  height="576"
+              /></a>
+              <p>Информационный сайт для&nbsp;туристов</p>
+              <button type="button">9&nbsp;900&nbsp;руб.</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h2>Pink</h2>
+              <a href="#"
+                ><img
+                  src="img/img-catalog-2.png"
+                  alt="Шаблон Pink"
+                  width="360"
+                  height="576"
+              /></a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <button type="button">9&nbsp;900&nbsp;руб.</button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <h2>Borodinski</h2>
+
+              <a href="#"
+                ><img
+                  src="img/img-catalog-3.png"
+                  alt="Шаблон Borodinski"
+                  width="360"
+                  height="576"
+              /></a>
               <div>
-                <a href="#">Sedona</a>
-                <p>Информационный сайт для&nbsp;туристов</p>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
                 <button type="button">9&nbsp;900&nbsp;руб.</button>
               </div>
             </article>
           </li>
-          <!-- и так далее в том же духе -->
           <li>
-            <a href="#"><img src="" alt="..." /></a>
+            <article>
+              <h2>Mishka</h2>
+              <a href="#"
+                ><img
+                  src="img/img-catalog-4.png"
+                  alt="Iаблона Mishka"
+                  width="360"
+                  height="576"
+              /></a>                          
+                <p>Интернет-магазин вязаных игрушек</p>
+                <button type="button">9&nbsp;900&nbsp;руб.</button>
+              
+            </article>
           </li>
           <li>
-            <a href="#"><img src="" alt="..." /></a>
+            <article>
+              <h2>Шаблон A Plus</h2>
+              <a href="#"
+                ><img
+                  src="img/img-catalog-5.png"
+                  alt="Шаблона A Plus"
+                  width="360"
+                  height="576"
+              /></a>
+                <p>Лендинг курсов повышения квалификации</p>
+                <button type="button">9&nbsp;900&nbsp;руб.</button>              
+            </article>
           </li>
           <li>
-            <a href="#"><img src="" alt="..." /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="..." /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="..." /></a>
+            <article>
+              <h2>Кваст</h4>
+              <a href="#"
+                ><img
+                  src="img/img-catalog-6.png"
+                  alt="Принт шаблона"
+                  width="360"
+                  height="576"
+              /></a>                              
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <button type="button">9&nbsp;900&nbsp;руб.</button>              
+            </article>
           </li>
         </ul>
         <ul>
@@ -142,6 +220,29 @@
         </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section>
+        <h2 class="visually-hidden">Как нас найти?</h2>
+        <img src="img/map.png" alt="map" width="1440" height="416" />
+        <div>
+          <h3>Nёrds design studio</h3>
+          <p>
+            191186, Санкт-Петербург<br />
+            ул. Б. Конюшенная, д.19/8
+          </p>
+          <p>Тел. +7 (812) 275-75-75</p>
+          <a href="#">Напишите нам</a>
+        </div>
+      </section>
+      <section>
+        <ul class="social">
+          <li><a href="#"></a>ВК</li>
+          <li><a href="#"></a>ФБ</li>
+          <li><a href="#"></a>Инста</li>
+        </ul>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальный сетей</p>
+      </section>
+    </footer>
   </body>
 </html>
