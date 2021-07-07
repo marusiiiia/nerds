@@ -50,7 +50,14 @@
 
 /* Global */
 
-body {
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   font-family: "Roboto", Arial, sans-serif;
   color: var(--text);
   font-size: 16px;
@@ -70,8 +77,12 @@ ul {
   display: none;
 }
 
-/* buttons */
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
 
+/* buttons */
 .button {
   font-family: inherit;
   font-weight: 500;
@@ -81,6 +92,8 @@ ul {
   color: #fff;
   background-color: var(--coral);
   border: none;
+  padding: 15px 0 20px 0;
+  border-radius: 5px;
 }
 
 .button:hover {
@@ -99,38 +112,61 @@ input[type="text"] {
   font-family: inherit;
 }
 
+.current-page {
+  border-bottom: 2px solid var(--coral);
+}
+
 /* header */
 
 .main-header {
+  padding-top: 50px;
   background-color: var(--light-gray-back);
 }
 
 .header-nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 31% auto 31%;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.current-page {
-  border-bottom: 2px solid var(--coral);
+.user-nav {
+  justify-self: right;
+}
+
+.site-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* main */
 
-.product-title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
+.advantages {
+  background-color: var(--light-gray-back);
+  padding-bottom: 100px;
 }
 
+.slider-list {
+  margin: 0;
+  padding: 0;
+}
 .h1,
 .slider-text {
+  margin-top: 0;
+  padding-top: 90px;
   color: #000;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+}
+
+.slider-button {
+  width: 240px;
+  display: block;
+  text-align: center;
 }
 
 .slogan {
@@ -140,14 +176,77 @@ input[type="text"] {
   color: #000;
 }
 
-.service-list {
-  list-style: url("../img/icons/list.svg");
+/* продукты */
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  padding: 0;
 }
 
-.service-list-title {
+.product-title {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+}
+
+.order_button {
+  min-width: 160px;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.product-img-coral {
+  display: inline-block;
+  background-color: var(--coral);
+}
+
+.product-img-green {
+  display: inline-block;
+  background-color: var(--green-button);
+}
+
+.product-img-yellow {
+  display: inline-block;
+  background-color: var(--yellow-button);
+}
+
+/* description */
+
+.description {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: min-content min-content;
+  grid-column-gap: 100px;
+  margin-bottom: 50px;
+}
+
+/* Услуги */
+
+.services {
+}
+.procent-div {
+}
+
+.service-list {
+  list-style: url("../img/icons/list.svg");
+}
+.service-list li {
+  margin: 22px 0;
+}
+
+.service-list-title {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .about-slogan {
@@ -163,6 +262,13 @@ input[type="text"] {
 .procent-text {
   font-size: 16px;
   line-height: 18px;
+}
+
+/* Клиенты */
+
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* footer */
@@ -201,6 +307,10 @@ input[type="text"] {
 
 .social-item {
   width: 100px;
+}
+
+.map-img {
+  width: 100%;
 }
 
 /* write us*/
@@ -306,5 +416,9 @@ input[type="text"] {
 
 .template-cover {
   text-align: center;
+  background-color: var(--light-gray-button);
+}
+
+.template-card {
   background-color: var(--light-gray-button);
 }
