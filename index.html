@@ -17,25 +17,20 @@
     <header class="main-header">
       <div class="container">
         <nav class="header-nav">
-          <img
-            class="header-logo"
-            src="img/nerds-logo.png"
-            alt="лого"
-            width="160"
-            height="67"
-          />
+          <div class="header-logo">
+
+          </div>
+          
+                    
+          
           <ul class="site-nav">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="сatalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a class="header-menu-link" href="#">Студия</a></li>
+            <li><a class="header-menu-link" href="#">Клиенты</a></li>
+            <li><a class="header-menu-link" href="сatalog.html">Магазин</a></li>
+            <li><a class="header-menu-link" href="#">Контакты</a></li>
           </ul>
           <div class="user-nav">
-            <a href="#"
-              ><img src="img/cart-icon.svg" width="15" height="15" /><span
-                >Корзина</span
-              ></a
-            >
+            <a href="#"><span>Корзина</span></a>
           </div>
         </nav>
       </div>
@@ -44,13 +39,13 @@
     <main>
       <h1 class="visually-hidden">Магазин шаблонов для сайтов Nerds</h1>
       <section class="advantages">
-        <div class="container">
+        <div class="container slider-container">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="slider-list">
             <li>
-              <div>
+              <div class="slider-desc">
                 <p class="slider-text">Долго, дорого, скрупулезно.</p>
-                <p>
+                <p class="slider-small-text">
                   Математически выверенный дизайн<br />
                   для вашего сайта или мобильного приложения.
                 </p>
@@ -58,9 +53,11 @@
               </div>
             </li>
             <li class="visually-hidden">
-              <div>
-                <p>Любим математику<br />как никто другой.</p>
-                <p>
+              <div class="slider-desc">
+                <p class="slider-text">
+                  Любим математику<br />как никто другой.
+                </p>
+                <p class="slider-small-text">
                   Никакого креатива, только математические формулы<br />для
                   расчета идеальных пропорций.
                 </p>
@@ -69,9 +66,9 @@
             </li>
 
             <li class="visually-hidden">
-              <div>
-                <p>Только ночь,<br />только хардкор</p>
-                <p>
+              <div class="slider-desc">
+                <p class="slider-text">Только ночь,<br />только хардкор</p>
+                <p class="slider-small-text">
                   Работать днем, как все? Мы против этого.<br />Ближе к полуночи
                   работа только начинается.
                 </p>
@@ -86,9 +83,9 @@
         <section>
           <h2 class="visually-hidden">Продукты</h2>
           <ul class="products-list">
-            <li>
+            <li class="product">
               <h3 class="product-title">Веб-сайты</h3>
-              <div class="product-img-coral">
+              <div class="product-img product-img-coral">
                 <img
                   src="img/web-sites.png"
                   alt="picture: web-sites"
@@ -96,16 +93,16 @@
                   height="146"
                 />
               </div>
-              <p>
+              <p class="product-text">
                 Мир никогда не будет прежним после того, как увидит ваш сайт
               </p>
               <button class="button order_button" type="button">
                 Заказать
               </button>
             </li>
-            <li>
+            <li class="product">
               <h3 class="product-title">Приложения</h3>
-              <div class="product-img-green">
+              <div class="product-img product-img-green">
                 <img
                   src="img/apps.png"
                   alt="picture: apps"
@@ -113,14 +110,16 @@
                   height="146"
                 />
               </div>
-              <p>Покорите топ-10 приложенй в AppStore и Google Play</p>
+              <p class="product-text">
+                Покорите топ-10 приложенй в AppStore и Google Play
+              </p>
               <button class="button green-button order_button" type="button">
                 Заказать
               </button>
             </li>
-            <li>
+            <li class="product">
               <h3 class="product-title">Презентации</h3>
-              <div class="product-img-yellow">
+              <div class="product-img product-img-yellow">
                 <img
                   src="img/presentations.png"
                   alt="picture: presentations"
@@ -128,7 +127,9 @@
                   height="146"
                 />
               </div>
-              <p>Вы даже не подозреваете, насколько вы изумительный!</p>
+              <p class="product-text">
+                Вы даже не подозреваете, насколько вы изумительный!
+              </p>
               <button class="button yellow-button order_button" type="button">
                 Заказать
               </button>
@@ -139,10 +140,10 @@
         <section class="description">
           <div>
             <h2 class="visually-hidden">Описание Nerds</h2>
-            <p class="slogan">
+            <p class="description-slogan">
               Мы - маленькая, но гордая дизайн-студия из Краснодара.
             </p>
-            <p>
+            <p class="description-text">
               Исповедуем принципы минимализма и чистоты. Ставим математический
               расчет превыше креатива. Работаем не покладая рук, как роботы.
             </p>
@@ -212,7 +213,7 @@
     </main>
 
     <footer>
-      <section>
+      <section class="map-address">
         <h2 class="visually-hidden">Как нас найти?</h2>
         <img
           class="map-img"
@@ -221,25 +222,26 @@
           width="1440"
           height="416"
         />
-        <div>
+        <div class="adress-block container">
           <h3 class="footer-address-title">Nёrds design studio</h3>
           <p class="footer-address-text">
             191186, Санкт-Петербург<br />
             ул. Б. Конюшенная, д.19/8
           </p>
-          <p>Тел. +7 (812) 275-75-75</p>
-          <a class="button" href="#">Напишите нам</a>
+          <p class="footer-tel-text">Тел. +7 (812) 275-75-75</p>
+          <a class="button footer-button" href="#">Напишите нам</a>
         </div>
       </section>
-      <section>
+      <section class="footer-bottom container">
         <ul class="social">
           <li class="social-item">
             <a href="#"></a>
 
             <svg
+              class="footer-svg"
               width="27"
-              height="16"
-              viewBox="0 0 27 16"
+              height="22"
+              viewBox="0 0 25 16"
               xmlns="http://www.w3.org/2000/svg"
             >
               <use
@@ -251,23 +253,10 @@
           <li class="social-item">
             <a href="#"></a>
             <svg
+              class="footer-svg"
               width="27"
-              height="16"
-              viewBox="0 0 27 16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use
-                class="social-icon"
-                href="img/icons/social-icons.svg#insta"
-              ></use>
-            </svg>
-          </li>
-          <li class="social-item">
-            <a href="#"></a>
-            <svg
-              width="27"
-              height="16"
-              viewBox="0 0 27 16"
+              height="22"
+              viewBox="0 0 12 16"
               xmlns="http://www.w3.org/2000/svg"
             >
               <use
@@ -276,13 +265,31 @@
               ></use>
             </svg>
           </li>
+          <li class="social-item">
+            <a href="#"></a>
+            <svg
+              class="footer-svg"
+              width="27"
+              height="22"
+              viewBox="0 0 21 21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use
+                class="social-icon"
+                href="img/icons/social-icons.svg#insta"
+              ></use>
+            </svg>
+          </li>
         </ul>
-        <p class="footer-slogan">Давайте дружить, это выгодно!</p>
-        <p class="footer-text">Скидка 10% для друзей из социальный сетей</p>
+        <div class="right-footer-bottom">
+          <p class="footer-slogan">Давайте дружить, это выгодно!</p>
+          <p class="footer-text">Скидка 10% для друзей из социальный сетей</p>
+        </div>
       </section>
     </footer>
 
     <section class="write-us">
+      <div class="blur"></div>
       <h2 class="write-us-title">Напишите нам</h2>
       <button class="button close-cross-button">
         <img
@@ -292,7 +299,7 @@
           src="img/close-cross.svg"
         /><span class="visually-hidden">Закрыть</span>
       </button>
-      <form action="#">
+      <form class="write-us-form" action="#">
         <p>
           <label class="write-us-label" for="your-name">Ваше имя:</label>
           <input
@@ -311,16 +318,16 @@
             placeholder="email@example.com"
           />
         </p>
-        <p>
+        <p class="letter-text">
           <label class="write-us-label" for="message-text">Текст письма:</label>
           <textarea
-            class="write-us-input"
+            class="letter-text-input"
             name=""
             id="message-text"
             placeholder="В свободной форме"
           ></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button write-us-button" type="submit">Отправить</button>
       </form>
     </section>
   </body>
