@@ -12,17 +12,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Nerds</title>
   </head>
-
   <body class="page-body">
     <header class="main-header">
       <div class="container">
         <nav class="header-nav">
-          <div class="header-logo">
-
-          </div>
-          
-                    
-          
+          <div class="header-logo"></div>
           <ul class="site-nav">
             <li><a class="header-menu-link" href="#">Студия</a></li>
             <li><a class="header-menu-link" href="#">Клиенты</a></li>
@@ -30,7 +24,7 @@
             <li><a class="header-menu-link" href="#">Контакты</a></li>
           </ul>
           <div class="user-nav">
-            <a href="#"><span>Корзина</span></a>
+            <a class="header-menu-link" href="#"><span>Корзина</span></a>
           </div>
         </nav>
       </div>
@@ -74,6 +68,20 @@
                 </p>
                 <a class="button slider-button" href="#">Узнать больше</a>
               </div>
+            </li>
+          </ul>
+          <ul class="toggle-button-list">
+            <li>
+              <button class="slider-toggle" aria-label="Слайдер-1"></button>
+            </li>
+            <li>
+              <button
+                class="slider-toggle active-toggle"
+                aria-label="Слайдер-2"
+              ></button>
+            </li>
+            <li>
+              <button class="slider-toggle" aria-label="Слайдер-3"></button>
             </li>
           </ul>
         </div>
@@ -141,7 +149,7 @@
           <div>
             <h2 class="visually-hidden">Описание Nerds</h2>
             <p class="description-slogan">
-              Мы - маленькая, но гордая дизайн-студия из Краснодара.
+              Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.
             </p>
             <p class="description-text">
               Исповедуем принципы минимализма и чистоты. Ставим математический
@@ -188,24 +196,20 @@
           <h2 class="visually-hidden">Наши клиенты</h2>
           <ul class="client-list">
             <li>
-              <a href="https://htmlacademy.ru/study"
-                ><img src="img/logo-html.png" alt="" width="199" height="68"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="img/borod.png" alt="" width="209" height="90"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="img/pink.png" alt="" width=185" height="52"/></a
+              <a
+                class="client-link htmlacademy-link"
+                href="https://htmlacademy.ru/study"
               >
+              </a>
             </li>
             <li>
-              <a href="#"
-                ><img src="img/mishka.png" alt="" width="173" height="84"
-              /></a>
+              <a class="client-link borod-link" href="#"></a>
+            </li>
+            <li>
+              <a class="client-link pink-link" href="#"></a>
+            </li>
+            <li>
+              <a class="client-link mishka-link" href="#"></a>
             </li>
           </ul>
         </section>
@@ -215,72 +219,81 @@
     <footer>
       <section class="map-address">
         <h2 class="visually-hidden">Как нас найти?</h2>
-        <img
-          class="map-img"
-          src="img/map.png"
-          alt="map"
-          width="1440"
-          height="416"
-        />
+        <div class="map-div">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6164346491294!2d30.320931116096983!3d59.93850663187611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311ad55a1523%3A0x9ab57c78b23ffe21!2z0KTQvtC90LQg0K3RgNC80LjRgtCw0LYgWFhJINCy0LXQug!5e0!3m2!1sru!2sru!4v1628097389094!5m2!1sru!2sru"
+            width="100%"
+            height="418"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+
         <div class="adress-block container">
           <h3 class="footer-address-title">Nёrds design studio</h3>
           <p class="footer-address-text">
             191186, Санкт-Петербург<br />
             ул. Б. Конюшенная, д.19/8
           </p>
-          <p class="footer-tel-text">Тел. +7 (812) 275-75-75</p>
+          <p class="footer-tel-text">тел. +7 (812) 275-75-75</p>
           <a class="button footer-button" href="#">Напишите нам</a>
         </div>
       </section>
-      <section class="footer-bottom container">
-        <ul class="social">
-          <li class="social-item">
-            <a href="#"></a>
 
-            <svg
-              class="footer-svg"
-              width="27"
-              height="22"
-              viewBox="0 0 25 16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use
-                class="social-icon"
-                href="img/icons/social-icons.svg#vk"
-              ></use>
-            </svg>
-          </li>
-          <li class="social-item">
-            <a href="#"></a>
-            <svg
-              class="footer-svg"
-              width="27"
-              height="22"
-              viewBox="0 0 12 16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use
-                class="social-icon"
-                href="img/icons/social-icons.svg#fb"
-              ></use>
-            </svg>
-          </li>
-          <li class="social-item">
-            <a href="#"></a>
-            <svg
-              class="footer-svg"
-              width="27"
-              height="22"
-              viewBox="0 0 21 21"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use
-                class="social-icon"
-                href="img/icons/social-icons.svg#insta"
-              ></use>
-            </svg>
-          </li>
-        </ul>
+      <section class="footer-bottom container">
+        <div class="social">
+          <a class="social-item" href="https://vk.com/feed">
+            <div>
+              <svg
+                class="footer-svg"
+                width="27"
+                height="22"
+                viewBox="0 0 25 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use
+                  class="social-icon"
+                  href="img/icons/social-icons.svg#vk"
+                ></use>
+              </svg>
+            </div>
+          </a>
+
+          <a class="social-item" href="#">
+            <div>
+              <svg
+                class="footer-svg"
+                width="27"
+                height="22"
+                viewBox="0 0 12 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use
+                  class="social-icon"
+                  href="img/icons/social-icons.svg#fb"
+                ></use>
+              </svg>
+            </div>
+          </a>
+
+          <a class="social-item" href="#">
+            <div>
+              <svg
+                class="footer-svg"
+                width="27"
+                height="22"
+                viewBox="0 0 21 21"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use
+                  class="social-icon"
+                  href="img/icons/social-icons.svg#insta"
+                ></use>
+              </svg>
+            </div>
+          </a>
+        </div>
         <div class="right-footer-bottom">
           <p class="footer-slogan">Давайте дружить, это выгодно!</p>
           <p class="footer-text">Скидка 10% для друзей из социальный сетей</p>
@@ -289,7 +302,6 @@
     </footer>
 
     <section class="write-us">
-      <div class="blur"></div>
       <h2 class="write-us-title">Напишите нам</h2>
       <button class="button close-cross-button">
         <img
@@ -313,7 +325,7 @@
           <label class="write-us-label" for="your-email">Ваш e-mail:</label>
           <input
             class="write-us-input"
-            type="text"
+            type="email"
             id="your-email"
             placeholder="email@example.com"
           />
