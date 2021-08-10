@@ -16,7 +16,7 @@
     <header class="main-header">
       <div class="container">
       <nav class="header-nav">
-        <a href="index.html">          
+        <a href="index.html" aria-label = "Перейти на  главную">          
           <div class="header-logo"></div
         ></a>
         <ul class="site-nav">
@@ -65,7 +65,7 @@
             </div>
             
             <p class="filter-slider-text">
-              От <input class="slider-input" type="number" /> До <input class="slider-input" type="number" />
+              От <input class="slider-input" type="number" aria-label="минимальное значение" /> До <input class="slider-input" type="number" aria-label="максимальное значение"/>
             </p>
           </fieldset>
           <fieldset class="catalog-form-fieldset setka-legend">
@@ -90,7 +90,7 @@
           <fieldset class="catalog-form-fieldset features-legend">
             <legend class="catalog-form-legend">Особенности:</legend>
             <ul class="catalog-filter-list">
-          <li>
+              <li>
                 <input class="filter-checkbox visually-hidden" type="checkbox" name="" id="checkbox-1" />
                 <label for="checkbox-1">Слайдер</label>
               </li>
@@ -347,11 +347,11 @@
         <div class="adress-block container">
           <h3 class="footer-address-title">Nёrds design studio</h3>
           <p class="footer-address-text">
-            191186, Санкт-Петербург<br />
+            191186666, Санкт-Петербург<br />
             ул. Б. Конюшенная, д.19/8
           </p>
           <p class="footer-tel-text">Тел. +7 (812) 275-75-75</p>
-          <a class="button footer-button" href="#">Напишите нам</a>
+          <a class="button footer-button" href="logi.html">Напишите нам</a>
         </div>
       </section>
 
@@ -414,5 +414,65 @@
         </div>
       </section>
     </footer>
+
+       <section class="write-us">
+      <h2 class="write-us-title">Напишите нам</h2>
+      <button class="button close-cross-button">
+        <img
+          class="close-cross"
+          width="21"
+          height="21"
+          src="img/close-cross.svg"
+        /><span class="visually-hidden">Закрыть</span>
+      </button>
+      <form class="write-us-form" action="#">
+        <p>
+          <label class="write-us-label" for="your-name">Ваше имя:</label>
+          <input
+            class="write-us-input"
+            type="text"
+            id="your-name"
+            placeholder="Имя Фамилия"
+          />
+        </p>
+        <p>
+          <label class="write-us-label" for="your-email">Ваш e-mail:</label>
+          <input
+            class="write-us-input"
+            type="email"
+            id="your-email"
+            placeholder="email@example.com"
+          />
+        </p>
+        <p class="letter-text">
+          <label class="write-us-label" for="message-text">Текст письма:</label>
+          <textarea
+            class="letter-text-input"
+            name=""
+            id="message-text"
+            placeholder="В свободной форме"
+          ></textarea>
+        </p>
+        <button
+          class="button write-us-button"
+          type="submit"
+          aria-label="Отправить сообщение на сайт"
+        >
+          Отправить
+        </button>
+      </form>
+    </section>
+        <script>
+      const footerButton = document.querySelector(".footer-button");
+      footerButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        document.querySelector(".write-us").classList = "write-us be-visible";
+      });
+
+      const crossButton = document.querySelector(".close-cross-button");
+      crossButton.addEventListener("click", function () {
+        document.querySelector(".write-us").classList = "write-us";
+      });
+    </script>
   </body>
 </html>

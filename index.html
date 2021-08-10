@@ -75,10 +75,7 @@
               <button class="slider-toggle" aria-label="Слайдер-1"></button>
             </li>
             <li>
-              <button
-                class="slider-toggle active-toggle"
-                aria-label="Слайдер-2"
-              ></button>
+              <button class="slider-toggle" aria-label="Слайдер-2"></button>
             </li>
             <li>
               <button class="slider-toggle" aria-label="Слайдер-3"></button>
@@ -104,7 +101,11 @@
               <p class="product-text">
                 Мир никогда не будет прежним после того, как увидит ваш сайт
               </p>
-              <button class="button order_button" type="button">
+              <button
+                class="button order_button"
+                type="button"
+                aria-label="Заказать веб-сайт"
+              >
                 Заказать
               </button>
             </li>
@@ -199,6 +200,7 @@
               <a
                 class="client-link htmlacademy-link"
                 href="https://htmlacademy.ru/study"
+                aria-label="Html academy"
               >
               </a>
             </li>
@@ -230,7 +232,7 @@
           ></iframe>
         </div>
 
-        <div class="adress-block container">
+        <div class="adress-block">
           <h3 class="footer-address-title">Nёrds design studio</h3>
           <p class="footer-address-text">
             191186, Санкт-Петербург<br />
@@ -243,7 +245,11 @@
 
       <section class="footer-bottom container">
         <div class="social">
-          <a class="social-item" href="https://vk.com/feed">
+          <a
+            class="social-item"
+            href="https://vk.com/feed"
+            aria-label="ссылка Вконтакте"
+          >
             <div>
               <svg
                 class="footer-svg"
@@ -311,7 +317,11 @@
           src="img/close-cross.svg"
         /><span class="visually-hidden">Закрыть</span>
       </button>
-      <form class="write-us-form" action="#">
+      <form
+        class="write-us-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
         <p>
           <label class="write-us-label" for="your-name">Ваше имя:</label>
           <input
@@ -319,6 +329,7 @@
             type="text"
             id="your-name"
             placeholder="Имя Фамилия"
+            name="my_login"
           />
         </p>
         <p>
@@ -328,6 +339,7 @@
             type="email"
             id="your-email"
             placeholder="email@example.com"
+            name="my_pass"
           />
         </p>
         <p class="letter-text">
@@ -339,8 +351,15 @@
             placeholder="В свободной форме"
           ></textarea>
         </p>
-        <button class="button write-us-button" type="submit">Отправить</button>
+        <button
+          class="button write-us-button"
+          type="submit"
+          aria-label="Отправить сообщение на сайт"
+        >
+          Отправить
+        </button>
       </form>
     </section>
+    <script src="js/writeUs.js"></script>
   </body>
 </html>
